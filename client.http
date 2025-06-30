@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:3333
+
+# @name create_account
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+  "name": "Denis Mercado Livre",
+  "email": "mercadolivre2@teste.com.br",
+  "password": "123456"
+}
+
+###
+
+# @name authenticate
+POST {{baseUrl}}/sessions
+Content-Type: application/json
+
+{
+  "email": "mercadolivre2@teste.com.br",
+  "password": "123456"
+}
+
+###
+
+# @name create_question
+POST {{baseUrl}}/questions
+Content-Type: application/json
+
+{
+  "email": "mercadolivre2@teste.com.br",
+  "password": "123456"
+}
